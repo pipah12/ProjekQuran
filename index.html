@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY-QURAN</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script/script.js"></script>
+
+</head>
+<body>
+    <div id="loading" class="hidden">
+        <img src="../assets/images/Qur'an.png" alt="loading-state"/>
+        <p>Sedang mengambil data ...</p>
+    </div>
+    <div id="error" class="hidden">
+        <img src="../assets/images/Qur'an.png" alt="error-state"/>
+        <p>Terjadi kesalahan pengambilan data ...</p>
+        <button>Muat ulang</button>
+    </div>
+
+    <section class="head-section">
+        <img src="../assets/images/logo.png" alt="kaligrafi Al-Qur'an"> 
+        <h1>Al-Qur'an</h1>
+        <input type="text" name="search-input" placeholder="Cari Surah">
+    </section>
+    <section id="list" class="list-section">
+    </section>  
+</body>
+</html>
